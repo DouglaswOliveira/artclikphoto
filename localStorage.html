@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Fotos - ArtClik Photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-background">
+            <img src="ArtClik Marketing (2).png" alt="Imagem de Fundo" class="background-img">
+        </div>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#photographers">Fotógrafos</a></li>
+                    <li><a href="eventosrecentes.html">Eventos Recentes</a></li>
+                    <li><a href="proximoseventos.html">Próximos Eventos</a></li>
+                    <li><a href="cart.html" class="btn">Carrinho</a></li>
+                    <li><a href="loginfotografos.html" class="btn">Cadastro de Fotógrafo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seleção de Fotos -->
+    <section id="photo-selection" class="photo-selection">
+        <h2>Escolha suas Fotos</h2>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="photo1.jpg" alt="Foto 1">
+                <button class="add-to-cart" data-photo="photo1.jpg">Adicionar ao Carrinho</button>
+            </div>
+            <div class="photo-item">
+                <img src="photo2.jpg" alt="Foto 2">
+                <button class="add-to-cart" data-photo="photo2.jpg">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais fotos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 ArtClik Photo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="selection.js"></script>
+</body>
+</html>

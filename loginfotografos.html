@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Fotógrafo - ArtClik Photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-background">
+            <img src="ArtClik Marketing (2).png" alt="Imagem de Fundo" class="background-img">
+        </div>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#photographers">Fotógrafos</a></li>
+                    <li><a href="eventosrecentes.html">Eventos Recentes</a></li>
+                    <li><a href="proximoseventos.html">Próximos Eventos</a></li>
+                    <li><a href="cart.html" class="btn">Carrinho</a></li>
+                    <li><a href="loginfotografos.html" class="btn">Cadastro de Fotógrafo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Login -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login de Fotógrafo</h2>
+            <form action="login-submit.php" method="post" class="login-form">
+                <div class="form-group floating-label">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="form-group floating-label">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Senha</label>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <div class="login-links">
+                <a href="forgot-password.html">Esqueceu a senha?</a>
+                <a href="register-photographer.html">Cadastrar-se</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 ArtClik Photo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

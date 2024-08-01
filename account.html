@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fotógrafo - ArtClik Photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-background">
+            <img src="ArtClik Marketing (2).png" alt="Imagem de Fundo" class="background-img">
+        </div>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#photographers">Fotógrafos</a></li>
+                    <li><a href="eventosrecentes.html">Eventos Recentes</a></li>
+                    <li><a href="proximoseventos.html">Próximos Eventos</a></li>
+                    <li><a href="cart.html" class="btn">Carrinho</a></li>
+                    <li><a href="loginfotografos.html" class="btn">Cadastro de Fotógrafo</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Cadastro de Fotógrafo -->
+    <main>
+        <section id="register-photographer" class="register-photographer">
+            <div class="container">
+                <h2>Cadastro de Fotógrafo</h2>
+                <form action="submit-registration.php" method="post" class="registration-form">
+                    <div class="form-group">
+                        <label for="full-name">Nome Completo</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" id="instagram" name="instagram">
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="text" id="whatsapp" name="whatsapp">
+                    </div>
+                    <div class="form-group">
+                        <label for="pix">Informações para PIX</label>
+                        <textarea id="pix" name="pix" rows="3" placeholder="Informe sua chave PIX (e-mail, telefone ou CPF) e dados bancários para recebimento." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="banner">Imagem de Banner</label>
+                        <input type="file" id="banner" name="banner" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-photo">Foto de Perfil</label>
+                        <input type="file" id="profile-photo" name="profile-photo" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn">Enviar Cadastro</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 ArtClik Photo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
